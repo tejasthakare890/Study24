@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="studySite.CSS" rel="stylesheet">
+  <link href="logo.css" rel="stylesheet">
+  <link href="login-singup.css" rel="stylesheet">
+  <title>studySite</title>
+</head>
+<body>
+  <div id="nav">
+    <div id="logo">
+      <h1>Study 24/7</h1>
+    </div>
+    <a href="#spacingForAbout">
+      <h3 id="a1">about</h3>
+    </a>
+    <a href="#spacingForCards">
+      <button class="courses">courses</button>
+    </a>
+    <button id="loginBtn">Login</button>
+    <button id="signupBtn">Signup</button>
+    <button id="logoutBtn">Logout</button>
+
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closeLoginModal">&times;</span>
+        <h2>Login</h2>
+        <form id="loginForm">
+          <input type="text" id="username" placeholder="Username" required>
+          <input type="password" id="password" placeholder="Password" required>
+          <button type="submit">Login</button>
+        </form>
+        <div id="loginMessage"></div>
+      </div>
+    </div>
+
+    <div id="signupModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closeSignupModal">&times;</span>
+        <h2>Join now</h2>
+        <form id="signupForm">
+          <input type="text" id="signupUsername" name="signupUsername" placeholder="Username" required>
+          <input type="password" id="signupPassword" name="signupPassword" placeholder="Password" required>
+          <input type="email" id="signupEmail" name="signupEmail" placeholder="Email" required>
+          <button type="submit">Signup</button>
+        </form>
+        <div id="signupMessage"></div>
+      </div>
+    </div>
+    <!-- navigation bar ending -->
+  </div>
+
+  <div id="cursor"></div>
+  <div id="cursorBlur"></div>
+  <video autoplay muted loop id="myVideo">
+    <source src="A4.mp4" type="video/mp4">
+  </video>
+  <!-- main page -->
+  <div id="main">
+    <!-- page 1 -->
+    <div id="page1">
+      <h1>Study now, succeed later</h1>
+      <p>
+        Welcome to the gateway of your future, where knowledge meets
+        innovation and learning knows no bounds. Dive into a world of endless
+        possibilities with our comprehensive online study platform, tailored
+        to empower your educational journey. Whether you’re a curious beginner
+        or a seasoned scholar, our resources are designed to fuel your passion
+        for learning and help you soar to new academic heights. Embrace the
+        convenience of studying anytime, anywhere, and join a community that
+        celebrates the joy of learning every day. Your quest for knowledge
+        starts here—let’s explore together! 🚀📚
+      </p>
+    </div>
+    <!-- page 2 -->
+    <div id="page2">
+      <div id="scroller">
+        <div id="scroller1">
+          <h1>Where Logic Meets Creative Expression</h1>
+        </div>
+      </div>
+      <div id="spacingForAbout"></div>
+      <div id="about">
+        <h1>ABOUT US</h1>
+        <p>
+          Welcome to Study 24/7! At Study 24/7, we are passionate about
+          providing high-quality learning resources for individuals eager to
+          enhance their skills in programming and web development. Whether
+          you're a beginner taking your first steps into the world of coding
+          or an experienced developer seeking to refine your expertise, we're
+          here to support your journey every step of the way. Our mission is
+          to make learning accessible, engaging, and rewarding for everyone.
+          With a diverse range of courses covering HTML, CSS, Python,
+          JavaScript, and Java, we strive to cater to learners of all levels
+          and preferences. Our carefully curated curriculum ensures that you
+          receive comprehensive and up-to-date instruction in each subject
+          area, equipping you with the knowledge and skills needed to succeed
+          in today's tech-driven world. What sets Study 24/7 apart is our
+          commitment to interactive and immersive learning experiences.
+          Through a combination of hands-on projects, interactive tutorials,
+          and real-world examples, we empower you to apply what you learn in
+          practical contexts, solidifying your understanding and boosting your
+          confidence. Join our vibrant community of learners and educators,
+          where collaboration, curiosity, and creativity thrive. Whether
+          you're pursuing personal enrichment, career advancement, or simply
+          exploring a new passion, Study 24/7 is your ultimate destination for
+          continuous learning, 24 hours a day, 7 days a week. Start your
+          learning journey with us today and unlock your full potential!
+        </p>
+      </div>
+      <div id="spacingForCards">
+        <div id="text-div">
+          <div id="tex">
+            <h1>Unlock Your World of Possibilities</h1>
+          </div>
+          <a href="#loginForm" id="loginLink">
+            <h3>Login to Begin</h3>
+            </a>
+          <a href="#signupModal" id="signupLink">
+            <h2>Join now to Discover More</h2>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="cards-container">
+      <div class="cards" id="card1">
+        <div class="overlay">
+             <a href="https://youtube.com/playlist?list=PL3wKQGrcrwP8hdzi_XEfFRQAc1MoOM0GN&feature=shared" id="arrowLink1">
+
+
+          <img src="arrow-right-circle.svg" id="arrow1">
+            </a>
+            
+          <h4>React-Js</h4>
+          <p>Unlock Limitless Web Innovation with ReactJS Mastery!</p>
+        </div>
+      </div>
+      <div class="cards" id="card2">
+        <div class="overlay">
+             <a href="https://youtube.com/playlist?list=PL3wKQGrcrwP-4HA4CZxYixfXYJYrhuvIs&feature=shared" id="arrowLink2 ">
+
+
+          <img src="arrow-right-circle.svg" id="arrow2">
+          </a>
+          <h4>Java</h4>
+          <p>Unlock the Power of Java: Code Your Way to Success!</p>
+        </div>
+      </div>
+      <div class="cards" id="card3">
+        <div class="overlay">
+             <a href="https://youtube.com/playlist?list=PL3wKQGrcrwP_ipBV10TelBHHJ4U6UvMKs&feature=shared" id="arrowLink3">
+
+
+
+          <img src="arrow-right-circle.svg" id="arrow3">
+          </a>
+          <h4>JavaScript</h4>
+          <p>Powering the Dynamic Web Learn to harness its potential with our comprehensive coding courses.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="cards-container1">
+      <div class="cards" id="card4">
+        <div class="overlay">
+             <a href="https://youtube.com/playlist?list=PL3wKQGrcrwP9LFMsWvlDdERL2wsMQhFNF&feature=shared" id="arrowLink4">
+
+
+          <img src="arrow-right-circle.svg" id="arrow4">
+
+          <h4>Html</h4>
+          </a>
+          <p>Craft Boundless Possibilities with HTML Expertise!</p>
+        </div>
+      </div>
+      <div class="cards" id="card5">
+        <div class="overlay">
+             <a href="https://youtube.com/playlist?list=PL3wKQGrcrwP_qTHE1afBEJQrgrjQZ3xc-&feature=shared" id="arrowLink5">
+
+          <img src="arrow-right-circle.svg" id="arrow5">
+        </a>
+          <h4>Css</h4>
+          <p>Craft Stunning Websites: Empower Your Designs with CSS Wizardry!</p>
+        </div>
+      </div>
+    </div>
+    <!-- page 3 -->
+    <div id="page3">
+      <h1>Still have queries? Contact Us</h1>
+      <h2>Request a Callback. An expert from the admissions office will call you
+        in the next 24 working hours. You can also reach out to us at
+        cs@study24.in or +91-7588209014
+      </h2>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+  <script src="studySite.js"></script>
+
+</body>
+</html>

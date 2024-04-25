@@ -1,0 +1,733 @@
+/* Remove unnecessary padding, margin, and box-sizing */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat';
+  margin: 0;
+  overflow: hidden;
+  perspective: 800px;
+}
+#nav {
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  display: flex; /* Use flexbox for easier alignment */
+  justify-content: space-evenly; /* Distribute items evenly */
+  align-items: center; /* Center items vertically */
+  z-index: 99;
+  background: linear-gradient(to left bottom,rgb(0, 0, 0),rgba(0, 0, 0, 0.909));
+}
+
+/* Media query for screens smaller than 768px (typically mobile devices) */
+@media only screen and (max-width: 768px) {
+  #nav {
+    flex-direction: row; /* Stack items vertically */
+    height: auto; /* Allow the height to adjust based on content */
+    padding: 20px; /* Add padding for better spacing */
+  }
+}
+@media only screen and (max-width: 450px) {
+  #nav {
+    flex-direction: row; /* Stack items vertically */
+    height: auto; /* Allow the height to adjust based on content */
+    padding: 20px; /* Add padding for better spacing */
+  }
+}
+
+
+
+#cursorBlur{
+  position: absolute;
+  height: 90px;
+  width: 90px;
+  background-color: #ceff48;
+  border-radius: 50%;
+  position: fixed;
+  filter: blur(30px);
+  z-index:99 ;
+
+}
+
+
+#a1 {
+  position: relative;
+  left: 81%;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2vw; /* Responsive font size based on viewport width */
+  color: #fff;
+  text-transform: uppercase;
+}
+
+/* Media query for screens smaller than 768px (typical mobile screens) */
+@media screen and (max-width: 767px) {
+  #a1 {
+    left: auto; /* Remove the left positioning */
+   top: 15%; /* Add margin top for spacing */
+    text-align: center; /* Center the text */
+    width: 100%; /* Ensure the link takes full width */
+    font-size: 4vw; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Media query for screens smaller than 768px (typical mobile screens) */
+@media screen and (max-width: 450px) {
+  #a1 {
+    position: relative;
+    left: auto; /* Remove the left positioning */
+    top: 10%; /* Add margin top for spacing */
+    text-align: center; /* Center the text */
+    width: 100%; /* Ensure the link takes full width */
+    font-size: 4vw; /* Adjust font size for smaller screens */
+  }
+}
+
+
+
+
+/* Dropdown menu */
+/* courses */
+
+/* Default styles for .courses */
+.courses {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  left: 50%;
+  text-decoration: none;
+  position: relative;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+  .courses {
+    width: 17vw;
+    position: relative;
+    font-size: 15px;
+    left: 7%;
+   }
+}
+
+@media only screen and (max-width: 450px) {
+  .courses {
+    width: 17vw;
+    position: relative;
+    font-size: 15px;
+    left: 7%;/* Adjust font size for smaller screens */
+  }
+}
+
+
+/* background video */
+video {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+#main {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.32);
+  overflow-y: auto; /* Add scrollbar if content exceeds viewport height */
+  height: 100vh;
+}
+
+#page1 {
+  height: 100vh;
+  width: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  left: 25%;
+  color: rgb(216, 237, 222);
+  text-align: center;
+  margin-top: 5%;
+  z-index: 10;
+}
+
+#page1 h1 {
+  width: max-content;
+  font-size: 50px;
+  font-weight: 900;
+  position: relative;
+  text-transform: uppercase;
+}
+
+#page1 h1::before {
+  position: absolute;
+  content: "Study now, succeed later";
+  color: #090909;
+  -webkit-text-stroke: 1px rgb(16, 18, 17);
+  top: -4px;
+  left: -4px;
+  z-index: -1;
+  text-transform: uppercase;
+}
+
+#page1 p {
+  font-size: 20px;
+  font-weight: 900;
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1024px) {
+  #page1 {
+    left: 0;
+    width: 100%;
+  }
+
+  #page1 h1 {
+    top: 25vh;
+    width: 70%;
+    font-size: 40px;
+  }
+
+  #page1 p {
+    font-size: 16px;
+    top: 33vh;
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #page1 {
+    left: 0;
+    width: 100%;
+  }
+
+  #page1 h1 {
+    top: 55vh;
+    width: 70%;
+    font-size: 40px;
+  }
+
+  #page1 p {
+    font-size: 16px;
+    top: 45vh;
+    width: 70%;
+  }
+}
+
+/* Media Queries */
+@media only screen and (max-width: 450px) {
+  #page1 {
+    left: 0;
+    width: 100%;
+  }
+
+  #page1 h1 {
+    font-size: 35px;
+    top: 75vh;
+  }
+
+  #page1 p {
+    font-size: 16px;
+    top: 75vh;
+  }
+}
+
+
+
+/* Additional CSS for page 2 */
+#page2 {
+  height: 100vh;
+  width: 100%;
+  z-index: 10;
+  color: rgb(254, 255, 247);
+}
+
+#scroller {
+  white-space: nowrap;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+  z-index: 10;
+}
+
+#scroller::-webkit-scrollbar {
+  display: none;
+}
+
+#scroller1 {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll;
+  animation-duration: 22s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+/* Default styles */
+#scroller h1 {
+  display: inline-block;
+  font-size: 80px;
+  font-weight: 800;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-right: 10px;
+  -webkit-text-stroke: 2px #a2feb0;
+  color: transparent;
+  transition: all linear 0.5s;
+}
+
+#scroller h1:hover {
+  color: hsl(345, 94%, 6%);
+}
+
+/* Keyframes animation */
+@keyframes scroll {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  #scroller h1 {
+
+    display: none;
+
+
+
+  }
+ 
+  
+}
+
+@media screen and (max-width: 576px) {
+  #scroller h1 {
+    display: none;
+
+
+  }
+
+}
+
+@media screen and (max-width: 360px) {
+  #scroller h1 {
+  
+    display: none;
+
+  }
+  
+  
+}
+
+#spacingForAbout {
+  height: 15%;
+  width: 100%;
+}
+
+#about {
+  tab-size: 20px;
+  position: relative;
+  font-weight: 800;
+  width: 80%;
+  margin-top: 5%;
+  margin-bottom: 20px;
+  left: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#about h1 {
+  display: inline-block;
+  font-size: 40px;
+  font-weight: 500;
+  font-family: 'Montserrat';
+  -webkit-text-stroke: 2px #e4eaea;
+  color: transparent;
+  transition: all linear 0.5;
+}
+
+#about h1:hover {
+  color: rgb(138, 251, 62);
+}
+
+#spacingForCards {
+  margin-top: 15%;
+  height: 35%;
+  width: 100%;
+  background-color: #09090933;
+}
+
+#cards-container {
+  position: relative;
+  top: 99.9%;
+  height: 60vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.cards {
+  height: 80%;
+  width: 25%;
+  border-radius: 5%;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  transition: all ease 0.5s;
+}
+
+#card1 {
+  background-image: url(React.png);
+}
+
+#card2 {
+  background-image: url(java.png);
+}
+
+#card3 {
+  background-image: url(Js.png);
+}
+
+#cards-container1 {
+  position: relative;
+  top: 99.9%;
+  height: 60vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#card4 {
+  background-image: url(html.png);
+}
+
+#card5 {
+  background-image: url(CCSS.jpeg);
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-color: #73f273;
+  background: linear-gradient(to left bottom, rgb(34, 232, 150), #b725aa);
+  padding-top: 40px;
+  text-align: center;
+  opacity: 0;
+  transition: all ease 0.5s;
+}
+
+.overlay h4 {
+  color: #f0f0a8;
+  font-family: fantasy;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 700;
+  white-space: nowrap;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 0 grey, 1px 2px 0 grey, 1px 3px 0 grey, 1px 4px 0 grey, 1px 5px 0 grey, 1px 6px 0 grey, 1px 7px 0 grey, 1px 8px 0 grey, 5px 13px 15px black;
+}
+
+.overlay img {
+  position: absolute;
+  height: 50px;
+  top: 3%;
+  left: 80%;
+}
+
+.overlay p {
+  color: #e3dddd;
+  font-size: 20px;
+  font-family: fantasy;
+}
+
+.cards:hover .overlay {
+  opacity: 1;
+}
+
+.cards:hover {
+  transform: rotate3d(-1, 1, 0, 20deg);
+}
+
+#text-div {
+  height: 35vh;
+  position: relative;
+  width: 100%;
+}
+#tex {
+  left: 25vw;
+  font-size: 20px;
+  font-weight: 900;
+  position: absolute;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0 grey, 1px 2px 0 grey, 1px 3px 0 grey, 1px 4px 0 grey, 1px 5px 0 grey, 1px 6px 0 grey, 1px 7px 0 rgb(21, 183, 194), 1px 8px 0 grey, 5px 13px 15px black;
+  top: -15%;
+  right: 17%;
+  justify-content: center;
+  text-align: center; 
+}
+
+@media screen and (max-width: 768px) {
+  #tex {
+    position: relative;
+    width: 60%;
+
+    font-size: 16px; /* Adjust font-size for smaller screens */
+    left: 20%;
+    justify-content: center;
+    text-align: center; /* Adjust position for smaller screens */
+  }
+  
+#text-div {
+  top:50vh;
+  height: 35vh;
+  position: relative;
+  width: 100%;
+}
+}
+
+@media screen and (max-width: 450px) {
+  #tex {
+    position: relative;
+    width: 40%;
+    font-size: 8px; /* Further adjust font-size for even smaller screens */
+    left: 30%; /* Further adjust position for even smaller screens */
+  }
+  #text-div {
+    top:100vh;
+    height: 35vh;
+    position: relative;
+    width: 100%;
+  }
+}
+
+/* Base styles */
+#text-div h3 {
+  font-size: 23px;
+  font-weight: 900;
+  position: absolute;
+  text-transform: uppercase;
+  color: snow;
+  top: 50%;
+  left: 30vw;
+}
+#text-div h3:hover{
+  color: #25960c;
+  text-decoration: underline rgb(255, 255, 255);
+} 
+
+#text-div h2 {
+  color: snow;
+  font-weight: 800;
+  position: absolute;
+  text-transform: uppercase;
+  top: 51%;
+  right: 20vw;
+  text-decoration: none;
+}
+
+#text-div h2:hover{
+  color: #25960c;
+  text-decoration: underline rgb(255, 255, 255);
+
+} 
+/* Media Queries */
+@media only screen and (max-width: 1024px) {
+  #text-div h3 {
+    width: 35vw;
+    top: 50%;
+    left: 8%;
+  }
+
+  #text-div h2 {
+    top: 51%;
+    width: 35vw;
+
+    right: 10%;
+    text-decoration: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #text-div h3 {
+    width: 35vw;
+    top: 50%;
+    left: 8%;
+  }
+
+  #text-div h2 {
+    top: 51%;
+    width: 35vw;
+
+    right: 10%;
+    text-decoration: none;
+  }
+}
+
+
+
+@media only screen and (max-width: 450px) {
+  #text-div h3 {
+    top: 50%;
+    left: 10%;
+    width: 35vw;
+    font-size: 10px;
+  }
+
+  #text-div h2 {
+    top: 51%;
+    right: 10%;
+    width: 35vw;
+    font-size: 10px;
+
+  }
+}
+
+/* Media Queries for Responsive Design */
+@media only screen and (max-width: 768px) {
+  /* Adjust styles for smaller screens here */
+  #about {
+    position: relative;
+    top:50vh;
+    width: 90%;
+    left: 5%;
+  }
+  
+  #cards-container {
+    top: 250vh;
+    flex-wrap: wrap;
+    position: relative;
+
+  }
+  
+  #cards-container1 {
+    top: 270vh;
+    flex-wrap: wrap;
+    position: relative;
+
+  }
+  
+  .cards {
+    width: 30vw;
+    height: 40vh;
+    margin-bottom: 5%;
+  }
+}
+
+
+/* Media Queries for Responsive Design */
+@media only screen and (max-width: 450px) {
+  /* Adjust styles for smaller screens here */
+  #about {
+    width: 90%;
+    left: 5%;
+    position: relative;
+    top:100vh;
+  }
+  
+  #cards-container {
+    top: 400vh;
+    flex-wrap: wrap;
+    position: relative;
+
+  }
+
+  #cards-container1 {
+    top: 350vh;
+    flex-wrap: wrap;
+    position: relative;
+
+  }
+  
+  
+  .cards {
+    width: 20vw;
+    height: 30vh;
+    margin-bottom: 5%;
+  }
+}
+
+
+
+#page3 {
+  position: relative;
+  top: 99.9%;
+  display: flex;
+  height: 40vh;
+  width: 100%;
+  background: linear-gradient(to left bottom, rgb(56, 56, 56), rgb(21, 21, 21));
+}
+
+#page3 h1 {
+  position: absolute;
+  left: 20%;
+  color: snow;
+  font-size: 50px;
+  font-weight: 900;
+}
+
+#page3 h2 {
+  position: absolute;
+  left: 20%;
+  width: 60%;
+  color: snow;
+  font-weight: 900;
+  top: 40%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+  #page3 h1 {
+    font-size: 8vh;
+    text-align: center;
+    left: 30%;
+  }
+
+  #page3 h2 {
+    width: 80%;
+    left: 10%;
+    font-size: 5vh;
+    text-align: center;
+
+
+  }
+  #page3{
+    position: relative;
+    top: 300vh;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #page3{
+    position: relative;
+    top: 350vh;
+  }
+  #page3 h1 {
+    font-size: 6vh;
+    text-align: center;
+    left: 20%;
+  }
+
+  #page3 h2 {
+    width: 80%;
+    left: 10%;
+    font-size: 3vh;
+    text-align: center;
+
+
+  }
+}
