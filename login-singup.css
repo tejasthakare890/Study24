@@ -57,16 +57,21 @@
   width: 10%;
   height: 50%;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.299);
+ 
+  background:  #000000d4;
+ 
+  border-radius: 50px;
 }
 
 .modal-content {
   position: relative;
-  background-color: #fefefe;
+  background-color: #15141473;
   margin: 10% auto;
   padding: 20px;
   border: 1px solid #888;
   width: 35%;
+  border-radius: 5%;
 }
 
 .close {

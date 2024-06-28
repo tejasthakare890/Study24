@@ -2,7 +2,7 @@
     position: sticky;
     margin-top: 25px;
       text-transform: uppercase;
-      background-image: linear-gradient(-225deg, #b9a5f5 0%, #81d4ed 29%, #f4f3f3 67%, #fff800 100%);
+      background-image: linear-gradient(-225deg, #f5aaa5 0%, #81d4ed 29%, #f4f3f3 67%, #fff800 100%);
       background-size: 400% auto; /* Increased background size for better effect */
       color: #fff;
       -webkit-background-clip: text;

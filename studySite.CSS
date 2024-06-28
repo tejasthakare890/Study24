@@ -20,22 +20,6 @@ body {
   background: linear-gradient(to left bottom,rgb(0, 0, 0),rgba(0, 0, 0, 0.909));
 }
 
-/* Media query for screens smaller than 768px (typically mobile devices) */
-@media only screen and (max-width: 768px) {
-  #nav {
-    flex-direction: row; /* Stack items vertically */
-    height: auto; /* Allow the height to adjust based on content */
-    padding: 20px; /* Add padding for better spacing */
-  }
-}
-@media only screen and (max-width: 450px) {
-  #nav {
-    flex-direction: row; /* Stack items vertically */
-    height: auto; /* Allow the height to adjust based on content */
-    padding: 20px; /* Add padding for better spacing */
-  }
-}
-
 
 
 #cursorBlur{
@@ -61,29 +45,6 @@ body {
   text-transform: uppercase;
 }
 
-/* Media query for screens smaller than 768px (typical mobile screens) */
-@media screen and (max-width: 767px) {
-  #a1 {
-    left: auto; /* Remove the left positioning */
-   top: 15%; /* Add margin top for spacing */
-    text-align: center; /* Center the text */
-    width: 100%; /* Ensure the link takes full width */
-    font-size: 4vw; /* Adjust font size for smaller screens */
-  }
-}
-
-/* Media query for screens smaller than 768px (typical mobile screens) */
-@media screen and (max-width: 450px) {
-  #a1 {
-    position: relative;
-    left: auto; /* Remove the left positioning */
-    top: 10%; /* Add margin top for spacing */
-    text-align: center; /* Center the text */
-    width: 100%; /* Ensure the link takes full width */
-    font-size: 4vw; /* Adjust font size for smaller screens */
-  }
-}
-
 
 
 
@@ -107,24 +68,6 @@ body {
   position: relative;
 }
 
-/* Media query for smaller screens */
-@media only screen and (max-width: 768px) {
-  .courses {
-    width: 17vw;
-    position: relative;
-    font-size: 15px;
-    left: 7%;
-   }
-}
-
-@media only screen and (max-width: 450px) {
-  .courses {
-    width: 17vw;
-    position: relative;
-    font-size: 15px;
-    left: 7%;/* Adjust font size for smaller screens */
-  }
-}
 
 
 /* background video */
@@ -135,6 +78,9 @@ video {
   object-fit: cover;
   z-index: -1;
 }
+
+
+
 
 #main {
   position: relative;
@@ -183,63 +129,6 @@ video {
   position: relative;
   margin-top: 10px;
   margin-bottom: 20px;
-}
-
-/* Media Queries */
-@media only screen and (max-width: 1024px) {
-  #page1 {
-    left: 0;
-    width: 100%;
-  }
-
-  #page1 h1 {
-    top: 25vh;
-    width: 70%;
-    font-size: 40px;
-  }
-
-  #page1 p {
-    font-size: 16px;
-    top: 33vh;
-    width: 70%;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  #page1 {
-    left: 0;
-    width: 100%;
-  }
-
-  #page1 h1 {
-    top: 55vh;
-    width: 70%;
-    font-size: 40px;
-  }
-
-  #page1 p {
-    font-size: 16px;
-    top: 45vh;
-    width: 70%;
-  }
-}
-
-/* Media Queries */
-@media only screen and (max-width: 450px) {
-  #page1 {
-    left: 0;
-    width: 100%;
-  }
-
-  #page1 h1 {
-    font-size: 35px;
-    top: 75vh;
-  }
-
-  #page1 p {
-    font-size: 16px;
-    top: 75vh;
-  }
 }
 
 
@@ -296,38 +185,6 @@ video {
   to {
     transform: translateX(-100%);
   }
-}
-
-/* Media queries for responsiveness */
-@media screen and (max-width: 768px) {
-  #scroller h1 {
-
-    display: none;
-
-
-
-  }
- 
-  
-}
-
-@media screen and (max-width: 576px) {
-  #scroller h1 {
-    display: none;
-
-
-  }
-
-}
-
-@media screen and (max-width: 360px) {
-  #scroller h1 {
-  
-    display: none;
-
-  }
-  
-  
 }
 
 #spacingForAbout {
@@ -399,7 +256,7 @@ video {
 }
 
 #card3 {
-  background-image: url(js.jpeg);
+  background-image: url(js.png);
 }
 
 #cards-container1 {
@@ -480,39 +337,6 @@ video {
   text-align: center; 
 }
 
-@media screen and (max-width: 768px) {
-  #tex {
-    position: relative;
-    width: 60%;
-
-    font-size: 16px; /* Adjust font-size for smaller screens */
-    left: 20%;
-    justify-content: center;
-    text-align: center; /* Adjust position for smaller screens */
-  }
-  
-#text-div {
-  top:50vh;
-  height: 35vh;
-  position: relative;
-  width: 100%;
-}
-}
-
-@media screen and (max-width: 450px) {
-  #tex {
-    position: relative;
-    width: 40%;
-    font-size: 8px; /* Further adjust font-size for even smaller screens */
-    left: 30%; /* Further adjust position for even smaller screens */
-  }
-  #text-div {
-    top:100vh;
-    height: 35vh;
-    position: relative;
-    width: 100%;
-  }
-}
 
 /* Base styles */
 #text-div h3 {
@@ -544,127 +368,15 @@ video {
   text-decoration: underline rgb(255, 255, 255);
 
 } 
-/* Media Queries */
-@media only screen and (max-width: 1024px) {
-  #text-div h3 {
-    width: 35vw;
-    top: 50%;
-    left: 8%;
-  }
-
-  #text-div h2 {
-    top: 51%;
-    width: 35vw;
-
-    right: 10%;
-    text-decoration: none;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  #text-div h3 {
-    width: 35vw;
-    top: 50%;
-    left: 8%;
-  }
-
-  #text-div h2 {
-    top: 51%;
-    width: 35vw;
-
-    right: 10%;
-    text-decoration: none;
-  }
-}
 
 
 
-@media only screen and (max-width: 450px) {
-  #text-div h3 {
-    top: 50%;
-    left: 10%;
-    width: 35vw;
-    font-size: 10px;
-  }
-
-  #text-div h2 {
-    top: 51%;
-    right: 10%;
-    width: 35vw;
-    font-size: 10px;
-
-  }
-}
-
-/* Media Queries for Responsive Design */
-@media only screen and (max-width: 768px) {
-  /* Adjust styles for smaller screens here */
-  #about {
-    position: relative;
-    top:50vh;
-    width: 90%;
-    left: 5%;
-  }
-  
-  #cards-container {
-    top: 250vh;
-    flex-wrap: wrap;
-    position: relative;
-
-  }
-  
-  #cards-container1 {
-    top: 270vh;
-    flex-wrap: wrap;
-    position: relative;
-
-  }
-  
-  .cards {
-    width: 30vw;
-    height: 40vh;
-    margin-bottom: 5%;
-  }
-}
-
-
-/* Media Queries for Responsive Design */
-@media only screen and (max-width: 450px) {
-  /* Adjust styles for smaller screens here */
-  #about {
-    width: 90%;
-    left: 5%;
-    position: relative;
-    top:100vh;
-  }
-  
-  #cards-container {
-    top: 400vh;
-    flex-wrap: wrap;
-    position: relative;
-
-  }
-
-  #cards-container1 {
-    top: 350vh;
-    flex-wrap: wrap;
-    position: relative;
-
-  }
-  
-  
-  .cards {
-    width: 20vw;
-    height: 30vh;
-    margin-bottom: 5%;
-  }
-}
 
 
 
 #page3 {
   position: relative;
-  top: 99.9%;
+  top: 100%;
   display: flex;
   height: 40vh;
   width: 100%;
@@ -689,45 +401,203 @@ video {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Media Queries */
-@media only screen and (max-width: 768px) {
-  #page3 h1 {
-    font-size: 8vh;
-    text-align: center;
-    left: 30%;
-  }
-
-  #page3 h2 {
-    width: 80%;
-    left: 10%;
-    font-size: 5vh;
-    text-align: center;
+.logo{
+  height: 50px;
+ position: relative;
+ flex-direction: row;
+ top:80%;
+left: 70%;
+justify-content: space-evenly;
+ 
 
 
-  }
-  #page3{
+}
+#l1,#l2,#l3,#l4{
+  height: 30px;
+  width: 30px;
+}
+
+
+
+
+
+/* chatbot */
+.popup {
+    display: none;
     position: relative;
-    top: 300vh;
+    bottom: 20px;
+    left: 40vw;
+    bottom: 30vh;
+    position: fixed;
+    z-index: 99;
+    background-color: #010101da;
+    border: 1px solid #fff0f0;
+    padding: 20px;
+    max-width: 300px;
+    border-radius: 5%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 9999;
+}
+
+#chatBtn{
+  height: 10vh;
+  width: 5vw;
+  position: fixed;
+  z-index: 99;
+  left: 90vw;
+  top: 70%;
+  border-radius: 50%;
+  background-color: #09090900;
+  border-color: #09090900;
+
+  
+}
+
+#chatBtn1{
+  top: -19%;
+  height: 11vh;
+  width: 5vw;
+  position: relative;
+  left: -13%;
+}
+
+
+.popup .close {
+    color: #fef8f8;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.popup .close:hover,
+.popup .close:focus {
+    color: rgb(241, 9, 9);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.popup #userInput {
+    width: calc(100% - 75px);
+    margin-right: 10px;
+}
+
+.popup #sendBtn {
+    width: 60px;
+    
+}
+
+.popup .chat-content {
+    max-height: 200px;
+    overflow-y: auto ;
+}
+
+
+.chat-message {
+  margin: 10px 0;
+  padding: 8px 12px;
+  border-radius: 10px;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.user-message {
+  background-color: #8d8df0;
+  align-self: flex-end;
+}
+
+.bot-message {
+  background-color: #67dd67;
+  align-self: flex-start;
+}
+
+.question {
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 5px;
+  background-color: #2be2d396;
+  width: 90%;
+  border-radius: 8%;
+  
+}
+
+
+.answer {
+  /* Add styles for answers here */
+  font-style: italic;
+  margin-left: 10px;
+}
+
+/* Feedback */
+.popup1 {
+  display: none; /* Initially hide the popup */
+  position: fixed;
+  bottom: 30vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  background-color: #0000008e;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+}
+
+.popup-content1 {
+  color: #f4ebeb;
+  text-align: center;
+}
+
+
+.close1 {
+  color: #f5eeee;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close1:hover,
+.close1:focus {
+  color: rgb(227, 6, 6);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#openPopupBtn1 {
+  position: relative;
+  background: none;
+  border: none;
+  font-size: 30px;
+  height: 50px;
+  bottom: 1vh;
+  left: 30vw;
+  color: #fcfcff; /* Set the color to blue */
+  cursor: pointer;
+
+  font-weight: 500;
+  /*  */
+    background-image: linear-gradient(-225deg, #38ff35 0%, #ff2525 29%, #f4f3f3 67%, #fff800 100%);
+    background-size: 400% auto; /* Increased background size for better effect */
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 5s linear infinite; /* Adjusted animation duration for better effect */
+ 
+}
+@keyframes textclip {
+  to {
+      background-position: 200% center;
   }
 }
 
-@media only screen and (max-width: 450px) {
-  #page3{
-    position: relative;
-    top: 350vh;
-  }
-  #page3 h1 {
-    font-size: 6vh;
-    text-align: center;
-    left: 20%;
-  }
 
-  #page3 h2 {
-    width: 80%;
-    left: 10%;
-    font-size: 3vh;
-    text-align: center;
+#openPopupBtn1:hover {
+  color: #00ff15; 
+  text-decoration: underline; /* Add underline to the text */
+  /* Darken the color on hover */
+}
 
+#feedbackText{
+  width: 400px;
 
-  }
 }
